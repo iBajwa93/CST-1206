@@ -20,9 +20,9 @@ const buttons = document.querySelectorAll(".btn")
 console.log(buttons, "All");
 
 //Event handler and listener for button1
-button1.addEventListener("click", function() {
-    console.log("Fired");
-})
+// button1.addEventListener("click", function() {
+//     console.log("Fired");
+// })
 
 //capture container element
 const container = document.querySelector(".container");
@@ -42,3 +42,30 @@ container.addEventListener("mouseleave",mouseLeft)
 
 //Go check out multiple types of events to use for JS query
 //https://developer.mozilla.org/en-US/docs/Web/Events
+
+//Capture image element
+const image = document.querySelector("img")
+console.log(image.src, "Original image")
+
+// We can also do some operations like changing an image using a button
+button1.addEventListener("click", function() {
+    image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-XokxHCvp1OuqL3dq0avB-u9xdXTgVw-aJQ&usqp=CAU"
+})
+
+
+// //We can toggle the image back and forth with functionality as well
+const originalImage = image.src;
+const newImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-XokxHCvp1OuqL3dq0avB-u9xdXTgVw-aJQ&usqp=CAU"
+
+let toggleMe = true;
+
+button1.addEventListener("click", function() {
+    if (toggleMe) {
+        image.src = newImage;
+        toggleMe = false;
+    } else {
+        image.src = originalImage;
+        toggleMe = true;
+    }
+})
+
