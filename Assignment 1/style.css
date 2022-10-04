@@ -1,3 +1,50 @@
-.border {
-    border: 1px solid black;
+ul{
+    background-color: aliceblue;
+    list-style:none;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    justify-content:center;
+   text-align: center;
+    padding:1em 2em 1em 2em;
+    margin-left: 250px;
+    margin-right: 250px;
+    border:2px solid black;
+  
+  
+  }
+  ul li{
+    padding:1em 2em .8em 2em;
+    border-bottom: 2px solid black;
+  
+  }
+
+body {
+    background-color: aqua;
 }
+form{
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-direction:column;
+    width:30vw;
+    background-color: aliceblue;
+    padding-bottom:25px;
+  }
+  form input{
+    margin-left:auto;
+    margin-right:auto;
+    width:20vw;
+
+  }
+  form span{
+    margin-left: 60px;
+    padding: 0.4em;
+  }
+  
+  form button{
+    padding:1.1em;
+    margin-top:25px;
+    margin-right:auto;
+    margin-left:auto;
+    width: 150px;
+  }
