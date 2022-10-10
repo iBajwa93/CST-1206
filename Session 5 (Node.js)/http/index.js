@@ -34,3 +34,5 @@ const server = http.createServer((request, response) => {
 server.listen(PORT, () => {
     console.log("Ian Server is running on port", PORT);
 })
+
+// .gitignore file should always be placed in the ROOT folder of wherever the .git folder is placed
