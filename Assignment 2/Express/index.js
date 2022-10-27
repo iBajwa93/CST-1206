@@ -44,7 +44,6 @@ app.post("/employees", (req, res) => {
       message: "One of the parameters is missing",
     });
   }
-  data.id = employeeList.length + 1;
   employeeList.push(data);
 
   return res.status(201).json({
