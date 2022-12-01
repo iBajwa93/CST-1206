@@ -11,8 +11,6 @@ app.set("views", "views");
 //serves all files in public folder
 app.use(express.static(path.join(__dirname, "public")));
 
-// let listOfNames = ["Ian", "Bajin", "Rinabi"];
-
 let name = "Wolf's Den";
 
 let email = "wolf.den@gmail.com";
