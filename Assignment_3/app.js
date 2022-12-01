@@ -24,11 +24,24 @@ var year = dateObj.getUTCFullYear();
 
 let RequestDate = day + "-" + month + "-" + year;
 
+let facebook = "/pictures/facebook.jpg";
+let instagram = "/pictures/instagram.jpg";
+let twitter = "/pictures/twitter.jpg";
+let youtube = "/pictures/youtube.jpg";
+let linkedin = "/pictures/linkedin.jpg";
+
 app.get("/", (req, res) => {
   res.render("index", {
     companyName: name,
     companyEmail: email,
     companyDate: RequestDate,
+    companyLinks: {
+      facebook,
+      instagram,
+      twitter,
+      youtube,
+      linkedin,
+    },
   });
 });
 
