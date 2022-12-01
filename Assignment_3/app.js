@@ -15,10 +15,17 @@ let name = "Wolf's Den";
 
 let email = "wolf.den@gmail.com";
 
-var dateObj = new Date();
-var month = dateObj.getUTCMonth() + 1; //months from 1-12
-var day = dateObj.getUTCDate();
-var year = dateObj.getUTCFullYear();
+var date = new Date();
+var utcDate = new Date(date.toUTCString());
+
+//converts UTC to PDT time
+utcDate.setHours(utcDate.getHours() - 8);
+
+var pdtDate = new Date(utcDate);
+
+var month = pdtDate.getUTCMonth() + 1; //months from 1-12
+var day = pdtDate.getUTCDate();
+var year = pdtDate.getUTCFullYear();
 
 let RequestDate = day + "-" + month + "-" + year;
 
