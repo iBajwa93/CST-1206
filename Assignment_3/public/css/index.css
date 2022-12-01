@@ -1,0 +1,76 @@
+html {
+  border: 7px solid yellow;
+  border-style: double;
+}
+body {
+  background-color: rgb(2, 2, 60);
+}
+
+p {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+  color: silver;
+  font-size: 18px;
+}
+
+.enterBtn {
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  font: inherit;
+  color: silver;
+  background: rgb(2, 2, 60);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: grey;
+  color: yellow;
+}
+
+.main {
+  margin-left: 30%;
+  background-color: grey;
+  padding: 100px;
+  border-radius: 50%;
+  width: 400px;
+  height: 300px;
+  border: 5px solid darkblue;
+  border-style: ridge;
+}
+
+.main hr {
+  border: 3px solid silver;
+}
+.main h1 {
+  color: yellow;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: grey;
+}
+
+.box {
+  border: 2px;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+.image {
+  height: 10rem;
+}
+
+.image img {
+  border-radius: 5px;
+
+  height: 20%;
+  margin-right: 10px;
+  width: 80%;
+}

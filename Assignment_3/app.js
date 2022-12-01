@@ -2,13 +2,20 @@ const express = require("express");
 const app = express();
 const PORT = 5000;
 
+//path required to serve the CSS file and other files since NodeJS doesn't do it by itself
+const path = require("path");
+
 app.set("view engine", "ejs");
+app.set("views", "views");
+
+//serves all files in public folder
+app.use(express.static(path.join(__dirname, "public")));
 
 // let listOfNames = ["Ian", "Bajin", "Rinabi"];
 
-let name = "Lycus";
+let name = "Wolf's Den";
 
-let email = "lycus.pack@gmail.com";
+let email = "wolf.den@gmail.com";
 
 var dateObj = new Date();
 var month = dateObj.getUTCMonth() + 1; //months from 1-12

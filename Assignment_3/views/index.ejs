@@ -1,31 +1,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Assignment_3</title>
-    <link rel="stylesheet" type="text/css" href="assets/style.css" />
-
-    <style>
-      body {
-        background-color: rgb(2, 2, 60);
-      }
-      h1 {
-        background-color: grey;
-        color: yellow;
-        padding: 100;
-        text-align: center;
-      }
-
-      h2 {
-        color: yellow;
-        font-size: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
-    <h1>The name of our company is: <%-companyName %></h1>
-    <h2>Email is: <%-companyEmail %></h2>
-    <h2>Date of request is: <%-companyDate %></h2>
+    <div class="main">
+      <h1>Welcome to the <%=companyName %></h1>
+      <hr />
+      <p class="box">
+        Where you will be guided towards rest, recuperation and good company.
+        <br /><br />First, complete the moon below.
+      </p>
+      <div class="enterBtn">
+        <a
+          href="http://www.quickmeme.com/img/ae/aedd56563c173a425b072cfd6201be430534fe4c0114bd2db24217bb888b842a.jpg"
+          class="btn"
+          >Enter</a
+        >
+      </div>
+    </div>
+    <h2>Email: <%=companyEmail %></h2>
+    <h2>Date of request is: <%=companyDate %></h2>
+
+    <%- include('./includes/links.ejs') %>
   </body>
 </html>
