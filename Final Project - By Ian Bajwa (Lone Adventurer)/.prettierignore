@@ -1,0 +1,10 @@
+#ignore ejs files (prevents auto-formatting closing tags upon saving an ejs layout file):
+
+main.ejs
+index.ejs
+categories.ejs
+recipe.ejs
+search.ejs
+explore-latest.ejs
+explore-random.ejs
+submit-recipe.ejs
